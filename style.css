@@ -1,0 +1,25 @@
+.logo{
+    width: 70px;
+    height: 90 px;
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    background-image: url("Шапка.jpg");
+    justify-content: center;
+}
+li{
+    margin: auto;
+    color: pink;
+}
+
+.h{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.Yato{
+    height: 200px;
+    width: 300px;
+}
