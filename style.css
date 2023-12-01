@@ -1,3 +1,7 @@
+.body{
+    background: url("Ято1.jpg");
+    background-repeat: no-repeat;
+}
 .logo{
     width: 70px;
     height: 90 px;
@@ -5,7 +9,7 @@
 menu{
     display: flex;
     flex-direction: row;
-    background-image: url("Шапка.jpg");
+    background-image: url("Ято1.jpg");
     justify-content: center;
 }
 li{
@@ -45,4 +49,90 @@ li{
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+}
+.button{
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: linear-gradient(to right, royalblue, #8b55e8);
+    border: none;
+}
+
+.menu-list{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu-list .menu-item{
+    float: left;
+}
+
+.menu-list a{
+    padding: .7em 1em .7em 2em;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    text-shadow: 0 0.5px 0 rgba(255,255,255,.5);
+    background-image: linear-gradient(#ddd,#5d9697);
+    border-right: 1px solid white;
+    box-shadow: 1px 0px 0px black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    font-family: Inter, serif;
+}
+
+.menu-list .menu-item:first-child a{
+    padding-left: 1em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 1px 0px 0px black;
+    left: 15px;
+    z-index: 2;
+}
+
+.menu-list a:hover{
+    background: #5d9697;
+}
+
+.menu-list a::after,
+.menu-list a::before{
+    content: "";
+    position: absolute;
+    margin-top: auto;
+    right: -1em;
+}
+
+.menu-list a::after{
+    z-index: 2;
+    border-left-color: #ddd;
+}
+
+.menu-list a::before{
+    border-left-color: #5d9697;
+    right: -1.1em;
+    z-index: 1;
+}
+
+.menu-list a:hover::after{
+    border-left-color: #fff;
+}
+
+.menu-list .current-page,
+.menu-list .current-page:hover{
+    font-weight: bold;
+    background: none;
+}
+
+.menu-list .current-page::after,
+.menu-list .current-page::before{
+    content: normal;
 }
