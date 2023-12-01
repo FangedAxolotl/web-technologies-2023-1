@@ -10,16 +10,39 @@ menu{
 }
 li{
     margin: auto;
-    color: pink;
+    color: blue;
 }
 
-.h{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
 .Yato{
     height: 200px;
     width: 300px;
+}
+.p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+.h1{
+    font-size: 64px;
+    color: #1F3F68;
+}
+.h2{
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;    
+}
+.h3{
+    font-size: 36px;
+    text-align: center;
+}
+.h4{
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+.input_textarea{
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
 }
