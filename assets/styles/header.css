@@ -1,0 +1,51 @@
+.menu{
+    display: flex;
+    box-shadow: 2px 2px 2px lightgray;
+    flex-direction: row;
+    border-radius: 12px;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+}
+.base{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+  
+.li-header{
+    padding: 5px;
+}
+.web{
+    margin-left: 20px;
+    color: #2d66ee;
+    font-weight: bold;
+}
+.numbers{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.li-numb{
+    padding: 5px;
+    color: #2d66ee;
+}
+.mail{
+    margin-left: 20px;
+    text-align: center;
+}
+.mail-text{
+    margin-left: 10px;
+}
+menu{
+    width: 1020px;
+    margin: auto;
+}
+body{
+    overflow: scroll;
+    background-color: #F2F4F7;
+}
+header{
+    position: sticky;
+    top: 0;
+}
