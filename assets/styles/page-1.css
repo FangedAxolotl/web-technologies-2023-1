@@ -1,0 +1,74 @@
+.mobile-span{
+    color: #2D66EE;
+}
+.small{
+    font-size: small;
+    margin-top: 20px;
+}
+.form_num_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 150px;
+    width: 550px;
+    border-radius: 12px;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+label {
+    display:block;
+}
+label{
+    font-size: small;
+}
+.input-border{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-top: 7px;
+}
+.input-kaz{
+    border: none;
+    border-bottom: 1px solid grey;
+    background: url(kz.svg) no-repeat scroll 7px 7px;
+    padding-left: 30px;
+    padding-top: 7px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.margin{
+    margin-left: 30px;
+}
+.margin-but{
+    margin-left: 30px;
+}
+.but{
+    height: 50px;
+    width: 120px;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #2d66ee;
+}
+.general-flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: -70px;
+}
+.mobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.development_mobile{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin-top: 30px;
+}

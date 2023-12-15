@@ -1,6 +1,7 @@
 @import "font.css";
 @import "header.css";
 @import "footer.css";
+@import "page-1.css";
 
 html {
     font-family: "Inter", sans-serif

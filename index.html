@@ -19,30 +19,44 @@
                 <span class="mail-text">itcompany@mail.com</span>
         </menu>
     </header>
-    <hr>
+<div class="general-flex">
     <div class="mobile">
         <div class="development_mobile">
-            <h1>Development of mobile<br>
-                applications and web services of<br>
+            <h1>Development of <span class="mobile-span">mobile</span><br>
+                <span class="mobile-span">applications</span> and <span class="mobile-span">web services</span> of<br>
                 any complexity
             </h1>
-            <p>We create mobile applications for iOS, Android that transfer your business to mobile<br>
+            <p class="small">We create mobile applications for iOS, Android that transfer your business to mobile<br>
                 applications od your customers' devices
             </p>
         </div>
-        <div class="continue">
-            <h1>Leave your contacts and we will call you back within 30 minutes</h1>
-        </div>
         <div class="form_num_name">
+            <h3>Leave your contacts and we will call you back<br>
+                 within 30 minutes
+            </h3>
             <form action="index.html" method="post">
-                <label for="number">Phone number</label>
-                <img src=""><input type="text" id="number" name="phone_mnumber">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="full_name">
-                <input type="button" value="Get consultation">
+                <div class="flex">
+                    <div>
+                        <label for="number">Phone number</label>
+                        <div class="flex">
+                            <input class="input-kaz" type="text" id="number" name="phone_mnumber" placeholder="+7 (111) 111-11-11">
+                        </div>
+                    </div>
+                    <div class="margin">
+                        <label for="name">Full Name</label>
+                        <input class="input-border" type="text" id="name" name="full_name"  placeholder="Иван Иванов">
+                    </div>
+                    <div class="margin-but">
+                        <input class="but" type="submit" value="Get&#x00A;consultation">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
+    <div>
+        <img src="1.png">
+    </div>
+</div>
     <hr>
     <div class="cycle">
         <div class="development_cycle">
