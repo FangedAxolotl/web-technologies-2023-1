@@ -3,7 +3,7 @@
 }
 .small{
     font-size: small;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .form_num_name{
     display: flex;
@@ -64,7 +64,7 @@ label{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 .development_mobile{
     display: flex;
