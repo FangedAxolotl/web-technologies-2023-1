@@ -1,74 +1,252 @@
-.mobile-span{
-    color: #2D66EE;
+@media (min-width: 1200px) {
+    .mobile-span{
+        color: #2D66EE;
+    }
+    .small{
+        font-size: small;
+        margin-top: 15px;
+    }
+    .number-cont{
+        margin-top: 30px;
+    }
+    .form_num_name{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 180px;
+        width: 560px;
+        border-radius: 12px;
+        padding-left: 20px;
+        margin-top: 50px;
+    }
+    label {
+        display:block;
+    }
+    label{
+        font-size: small;
+    }
+    .input-border{
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-top: 7px;
+    }
+    .input-kaz{
+        border: none;
+        border-bottom: 1px solid grey;
+        background: url(kz.svg) no-repeat scroll 7px 7px;
+        padding-left: 30px;
+        padding-top: 7px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    .margin{
+        margin-left: 30px;
+    }
+    .margin-but{
+        margin-left: 30px;
+    }
+    .but{
+        height: 50px;
+        width: 120px;
+        text-align: left;
+        padding-left: 20px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #2d66ee;
+    }
+    .general-flex{
+        display: flex;
+        flex-direction: row;
+        margin-top: -70px;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 90px;
+    }
+    .development_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 30px;
+    }
+    .but-hidden{
+        display: none;
+    }
 }
-.small{
-    font-size: small;
-    margin-top: 15px;
+@media (min-width: 768px) and (max-width: 1199px) {
+    .mobile-span{
+        color: #2D66EE;
+    }
+    .small{
+        font-size: small;
+        margin-top: 15px;
+        width: 340px;
+    }
+    .form_num_name{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 330px;
+        width: 360px;
+        border-radius: 12px;
+        padding-left: 20px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 6px lightgray;
+    }
+    .smaller{
+        width: 400px;
+    }
+    label {
+        display:block;
+    }
+    label{
+        font-size: small;
+    }
+    .input-border{
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-top: 7px;
+    }
+    .input-kaz{
+        border: none;
+        border-bottom: 1px solid grey;
+        background: url(kz.svg) no-repeat scroll 7px 7px;
+        padding-left: 30px;
+        padding-top: 7px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .but{
+        display: none;
+    }
+    .general-flex{
+        display: flex;
+        flex-direction: row;
+        margin-top: -90px;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .development_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 30px;
+    }
+    .margin{
+        margin-top: 30px;
+    }
+    .margin-but{
+        margin-top: 30px;
+    }
+    .number-cont{
+        margin-top: 10px;
+    }
+    .but-hidden{
+        height: 50px;
+        width: 180px;
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #2d66ee;
+    }
+    .size-image{
+        position: absolute;
+        z-index: -1;
+        width: 800px;
+        height: 1350px;
+        transform: scale(0.5);
+        top: -300px;
+        right: -200px;
+    }
 }
-.form_num_name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    height: 150px;
-    width: 550px;
-    border-radius: 12px;
-    padding-left: 20px;
-    margin-top: 50px;
-}
-label {
-    display:block;
-}
-label{
-    font-size: small;
-}
-.input-border{
-    border: none;
-    border-bottom: 1px solid grey;
-    padding-top: 7px;
-}
-.input-kaz{
-    border: none;
-    border-bottom: 1px solid grey;
-    background: url(kz.svg) no-repeat scroll 7px 7px;
-    padding-left: 30px;
-    padding-top: 7px;
-}
-.flex{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-}
-.margin{
-    margin-left: 30px;
-}
-.margin-but{
-    margin-left: 30px;
-}
-.but{
-    height: 50px;
-    width: 120px;
-    text-align: left;
-    padding-left: 20px;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    background-color: #2d66ee;
-}
-.general-flex{
-    display: flex;
-    flex-direction: row;
-    margin-top: -70px;
-}
-.mobile{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    margin-top: 90px;
-}
-.development_mobile{
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    margin-top: 30px;
+@media (min-width: 425px) and (max-width: 767px) {
+    .mobile-span{
+        color: #2D66EE;
+    }
+    .small{
+        font-size: small;
+        margin-top: 15px;
+    }
+    .form_num_name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: 150px;
+        width: 550px;
+        border-radius: 12px;
+        padding-left: 20px;
+        margin-top: 50px;
+    }
+    label {
+        display:block;
+    }
+    label{
+        font-size: small;
+    }
+    .input-border{
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-top: 7px;
+    }
+    .input-kaz{
+        border: none;
+        border-bottom: 1px solid grey;
+        background: url(kz.svg) no-repeat scroll 7px 7px;
+        padding-left: 30px;
+        padding-top: 7px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    .margin{
+        margin-left: 30px;
+    }
+    .margin-but{
+        margin-left: 30px;
+    }
+    .but{
+        height: 50px;
+        width: 120px;
+        text-align: left;
+        padding-left: 20px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #2d66ee;
+    }
+    .general-flex{
+        display: flex;
+        flex-direction: row;
+        margin-top: -70px;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 90px;
+    }
+    .development_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 30px;
+    }
 }

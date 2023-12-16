@@ -1,51 +1,180 @@
-.menu{
-    display: flex;
-    box-shadow: 2px 2px 2px lightgray;
-    flex-direction: row;
-    border-radius: 12px;
-    align-items: center;
-    background-color: white;
-    height: 50px;
+@media (min-width: 1200px) {
+    .menu{
+        display: flex;
+        box-shadow: 2px 2px 2px lightgray;
+        flex-direction: row;
+        border-radius: 12px;
+        align-items: center;
+        background-color: white;
+        height: 50px;
+    }
+    .base{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+      
+    .li-header{
+        padding: 5px;
+    }
+    .web{
+        margin-left: 20px;
+        color: #2d66ee;
+        font-weight: bold;
+    }
+    .numbers{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .li-numb{
+        padding: 5px;
+        color: #2d66ee;
+    }
+    .mail{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .mail-text{
+        margin-left: 10px;
+        color: #2d66ee;
+    }
+    menu{
+        width: 1020px;
+        margin: auto;
+    }
+    body{
+        background-color: #F2F4F7;
+    }
+    header{
+        position: sticky;
+        top: 0;
+    }    
+    .ex{
+        display: none;
+    }
 }
-.base{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .menu{
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between;
+        width: 100%;
+    }
+    .base{
+        display: none;
+        flex-direction: row;
+        list-style-type: none;
+    }
+      
+    .li-header{
+        padding: 5px;
+    }
+    .web{
+        color: #2d66ee;
+        font-weight: bold;
+        font-size: x-large;
+        margin-left: 110px;
+    }
+    .numbers{
+        list-style-type: none;
+        display: none;
+        flex-direction: row;
+    }
+    .li-numb{
+        padding: 5px;
+        color: #2d66ee;
+    }
+    .mail{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+    }
+    .mail-text{
+        margin-left: 10px;
+        color: #2d66ee;
+        font-size: small;
+    }
+    menu{
+        display: flex;
+        flex-direction: row;
+        border-radius: 12px;
+        align-items: center;
+        font-size: x-small;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 2px 2px 2px lightgray;
+        height: 70px;
+    }
+    body{
+        background-color: #F2F4F7;
+        overflow-x: hidden;
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
+    .ex{
+        display: block;
+    }
 }
-  
-.li-header{
-    padding: 5px;
-}
-.web{
-    margin-left: 20px;
-    color: #2d66ee;
-    font-weight: bold;
-}
-.numbers{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.li-numb{
-    padding: 5px;
-    color: #2d66ee;
-}
-.mail{
-    margin-left: 20px;
-    text-align: center;
-}
-.mail-text{
-    margin-left: 10px;
-}
-menu{
-    width: 1020px;
-    margin: auto;
-}
-body{
-    overflow: scroll;
-    background-color: #F2F4F7;
-}
-header{
-    position: sticky;
-    top: 0;
+
+@media (min-width: 425px) and (max-width: 767px){
+    .menu{
+        display: flex;
+        box-shadow: 2px 2px 2px lightgray;
+        flex-direction: row;
+        border-radius: 12px;
+        align-items: center;
+        background-color: white;
+    }
+    .base{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+      
+    .li-header{
+        padding: 5px;
+    }
+    .web{
+        margin-left: 20px;
+        color: #2d66ee;
+        font-weight: bold;
+    }
+    .numbers{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .li-numb{
+        padding: 5px;
+        color: #2d66ee;
+    }
+    .mail{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .mail-text{
+        margin-left: 10px;
+        color: #2d66ee;
+    }
+    menu{
+        width: 1020px;
+        margin: auto;
+    }
+    body{
+        background-color: #F2F4F7;
+    }
+    header{
+        position: sticky;
+        top: 0;
+    }        
 }
