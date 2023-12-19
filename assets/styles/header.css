@@ -126,17 +126,17 @@
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px){
+@media (min-width: 424px) and (max-width: 767px){
     .menu{
-        display: flex;
-        box-shadow: 2px 2px 2px lightgray;
-        flex-direction: row;
-        border-radius: 12px;
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        background-color: white;
+        padding-left: 20px;
+        width: 100%;
     }
     .base{
-        display: flex;
+        display: none;
         flex-direction: row;
         list-style-type: none;
     }
@@ -145,13 +145,14 @@
         padding: 5px;
     }
     .web{
-        margin-left: 20px;
         color: #2d66ee;
+        font-size: 20px;
         font-weight: bold;
+        justify-self: center;
     }
     .numbers{
         list-style-type: none;
-        display: flex;
+        display: none;
         flex-direction: row;
     }
     .li-numb{
@@ -159,22 +160,43 @@
         color: #2d66ee;
     }
     .mail{
-        margin-left: 20px;
-        text-align: center;
+        display: none;
     }
     .mail-text{
         margin-left: 10px;
         color: #2d66ee;
+        font-size: small;
     }
     menu{
-        width: 1020px;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 12px;
+        align-items: center;
+        font-size: x-small;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 2px 2px 2px lightgray;
+        height: 90px;
+        padding-left: 0px;
     }
     body{
         background-color: #F2F4F7;
+        overflow-x: hidden;
     }
     header{
         position: sticky;
-        top: 0;
-    }        
+        top: 0px;
+        width: 100%;
+    }
+    #ex-men{
+        width: 40px;
+        height: 20px;
+        justify-self: flex-start;
+    }
+    .fixed{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
