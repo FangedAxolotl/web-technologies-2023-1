@@ -346,21 +346,20 @@
   .cycle .development_cycle .full_dev {
     font-size: 28px;
   }
-  .cycle .development_cycle .dif_development {
+  .cycle .dif_development {
     margin-left: 20px;
     margin-bottom: 50px;
   }
-  .cycle .development_cycle .dif_development .thing {
+  .cycle .dif_development .thing {
     margin-top: 10px;
     display: flex;
     align-items: center;
     font-size: 20px;
-    width: 200px;
   }
-  .cycle .development_cycle .dif_development .thing .dif_el:hover {
+  .cycle .dif_development .thing .dif_el:hover {
     border-bottom: 1px solid #2D66EE;
   }
-  .cycle .development_cycle .dif_development .thing .icon {
+  .cycle .dif_development .thing .icon {
     margin-left: 20px;
   }
   label {

@@ -355,25 +355,24 @@ $form-color: white;
             .full_dev{
                 font-size: 28px;
             }
-            .dif_development{
-                margin-left: 20px;
-                margin-bottom: 50px;
-                .thing{
-                    margin-top: 10px;
-                    display: flex;
-                    align-items: center;
-                    font-size: 20px;
-                    width: 200px;
-                    .dif_el:hover{
-                        border-bottom: 1px solid $blue-color;
-                    }
-                    .icon{
-                        margin-left: 20px;
-                    }
+        }
+        .dif_development{
+            margin-left: 20px;
+            margin-bottom: 50px;
+            .thing{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                .dif_el:hover{
+                    border-bottom: 1px solid $blue-color;
+                }
+                .icon{
+                    margin-left: 20px;
                 }
             }
-
         }
+        
     }
     label {
         display:block;
