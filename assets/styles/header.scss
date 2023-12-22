@@ -1,0 +1,176 @@
+$blue-color:  #2d66ee;
+$body-color:  #F2F4F7;
+$menu-color: white;
+$numb-20: 20px;
+$numb-5: 5px;
+$width-100: 100%;
+$numb-0: 0px;
+@media (min-width: 1200px) {
+    body{
+        background-color: $body-color;
+        header{
+            position: sticky;
+            top: $numb-0;
+            menu{
+                width: 1124px;
+                margin: auto;
+                .menu{
+                    display: flex;
+                    box-shadow: 2px 2px 2px lightgray;
+                    flex-direction: row;
+                    border-radius: 12px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $menu-color;
+                    height: 50px;
+                    #ex-men{
+                        display: none;
+                    }
+                    .web{
+                        margin-left: $numb-20;
+                        color: $blue-color;
+                        font-weight: bold;
+                    }
+                    .base{
+                        display: flex;
+                        flex-direction: row;
+                        list-style-type: none;
+                        margin-left: $numb-20;
+                        margin-right: $numb-20;
+                        .li-header{
+                            padding: $numb-5;
+                        }
+                    }
+                    .numbers{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        .li-numb{
+                            padding: $numb-5;
+                            color: $blue-color;
+                        }
+                    }
+                    .mail{
+                        display: flex;
+                        align-items: center;
+                        margin-left: $numb-20;
+                        text-align: center;
+                        .mail-text{
+                            margin-left: $numb-5 + $numb-5;
+                            color: $blue-color;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    body{
+        background-color: $body-color;
+        overflow-x: hidden;
+        header{
+            position: sticky;
+            top: $numb-0;
+            width: $width-100;
+            menu{
+                display: flex;
+                flex-direction: row;
+                border-radius: 12px;
+                align-items: center;
+                font-size: x-small;
+                justify-content: center;
+                background-color: $menu-color;
+                box-shadow: 2px 2px 2px lightgray;
+                height: 70px;
+                .menu{
+                    display: flex;
+                    flex-direction: row; 
+                    align-items: center; 
+                    justify-content: space-between;
+                    width: $width-100;
+                    #ex-men{
+                        display: block;
+                    }
+                    .web{
+                        color: $blue-color;
+                        font-weight: bold;
+                        font-size: x-large;
+                        margin-left: 110px;
+                    }
+                    .base{
+                        display: none;
+                    }
+                    .numbers{
+                        display: none;
+                    }
+                    .mail{
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        padding: 40px;
+                        .mail-text{
+                            margin-left: 10px;
+                            color: $blue-color;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 424px) and (max-width: 767px){
+    body{
+        background-color: $body-color;
+        overflow-x: hidden;
+        header{
+            position: sticky;
+            top: $numb-0;
+            width: $width-100;
+            z-index: 2;
+            menu{
+                display: flex;
+                flex-direction: row;
+                border-radius: 12px;
+                align-items: center;
+                font-size: x-small;
+                justify-content: center;
+                background-color: white;
+                box-shadow: 2px 2px 2px lightgray;
+                height: 90px;
+                padding-left: $numb-0;
+                .menu{
+                    margin-left: $numb-0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+                    padding-left: $numb-20;
+                    width: $width-100;
+                    #ex-men{
+                        width: 40px;
+                        height: $numb-20;
+                        justify-self: flex-start;
+                    }
+                    .web{
+                        color: $blue-color;
+                        font-size: $numb-20;
+                        font-weight: bold;
+                        justify-self: center;
+                    }
+                    .base{
+                        display: none;
+                    }
+                    .numbers{
+                        display: none;
+                    }
+                    .mail{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

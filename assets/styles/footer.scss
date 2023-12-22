@@ -1,0 +1,117 @@
+$numb-45: 45px;
+$numb-15: 15px;
+$numb-12: 12px;
+$numb-10: 10px;
+@media screen and (min-width: 1200px){
+    footer{
+        margin: auto;
+        background-color: #101828;
+        border-radius: $numb-12;
+        color: white;
+        height: 200px;
+        width: 1300px;
+        .center{
+            padding-top: $numb-15;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .foo_el{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .info{
+                .el{
+                    display: flex;
+                    align-items: center;
+                    .ind{
+                        margin: $numb-10;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+        .center-end{
+            display: flex;
+            margin-top: $numb-45;
+            justify-content: center;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .foo_el{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer{
+        margin: auto;
+        background-color: #101828;
+        border-radius: $numb-12;
+        color: white;
+        height: 230px;
+        .center{
+            padding-top: $numb-15;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .foo_el{
+            .el{
+                display: flex;
+                align-items: center;
+                .ind{
+                    margin: $numb-10;
+                    font-size: small;
+                }
+            }
+        }
+        .center-end{
+            display: flex;
+            margin-top: $numb-45;
+            justify-content: center;
+        }    
+    }
+}
+@media (min-width: 424px) and (max-width: 767px) {
+
+    footer{
+        background-color: #101828;
+        border-radius: $numb-12;
+        color: white;
+        height: 280px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .center{
+            padding-top: $numb-15;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .foo_el{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            font-size: 14px;
+            justify-content: space-evenly;
+            .info{
+                width: 150px;
+                margin-top: $numb-10;
+                .el{
+                    display: flex;
+                    align-items: center;
+                    .ind{
+                        margin: $numb-10;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+        .center-end{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+}
