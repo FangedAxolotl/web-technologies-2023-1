@@ -3,6 +3,36 @@ $width-100: 100%;
 $numb-30: 30px;
 $form-color: white;
 @media screen and (min-width: 1200px) {
+    @keyframes left {
+        from{
+            transform: scale(100%, 100%) rotate(-12deg)  translateY(800px);
+        }
+        to{
+            transform: scale(100%, 100%) rotate(-12deg) translateY(-2000px);
+        }
+        
+    }
+    @keyframes right {
+        from{
+            transform: scale(100%, 100%) rotate(-12deg) translateY(-2000px);
+        }
+        to{
+            transform: scale(100%, 100%) rotate(-12deg)  translateY(900px);
+        }
+        
+    }
+    .image-right{
+        animation-name: right;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+    .image-left{
+        animation-name: left;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
     .general-flex{
         display: flex;
         flex-direction: row;
@@ -87,8 +117,15 @@ $form-color: white;
             flex-direction: row;
             justify-content: flex-end;
             z-index: -1;
+            margin-left: 80px;
             .size-image{
                 display: none;
+            }
+            .image-left{
+                transform: scale(100%, 100%) rotate(-12deg) translateY(-550px);
+            }
+            .image-right{
+                transform: scale(100%, 100%) rotate(-12deg) translateY(-630px);
             }
         }
     }
@@ -200,18 +237,24 @@ $form-color: white;
                 }
             }
         }
-        .size-image-png{
-            display: none;
-        }
-        .size-image{
-            position: absolute;
-            z-index: -1;
-            width: 800px;
-            height: 1350px;
-            transform: scale(0.5);
-            top: -300px;
-            right: -200px;
-        }
+    }
+    .size-image-png{
+        display: none;
+    }
+    .size-image{
+        position: absolute;
+        z-index: -1;
+        width: 800px;
+        height: 1350px;
+        transform: scale(0.5);
+        top: -300px;
+        right: -200px;
+    }
+    .image-left{
+        display: none;
+    }
+    .image-right{
+        display: none;
     }
     .cycle{
         display: flex;
@@ -252,6 +295,12 @@ $form-color: white;
     }
 }
 @media (min-width: 424px) and (max-width: 767px) {
+    .image-left{
+        display: none;
+    }
+    .image-right{
+        display: none;
+    }
     .general-flex{
         display: flex;
         flex-direction: column;
@@ -333,11 +382,12 @@ $form-color: white;
         .size-image-png{
             display: none;
         }
- 
         .size-image{
             height: 800px;
             z-index: -1;
-            transform: scale(100%, 100%) translateY(-350px) translateX(155px);
+            transform: scale(100%, 100%) translateY(-350px);
+            position: absolute;
+            right: 0px;
         }
     }
     .cycle{

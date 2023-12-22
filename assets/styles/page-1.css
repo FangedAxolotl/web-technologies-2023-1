@@ -1,4 +1,32 @@
 @media screen and (min-width: 1200px) {
+  @keyframes left {
+    from {
+      transform: scale(100%, 100%) rotate(-12deg) translateY(800px);
+    }
+    to {
+      transform: scale(100%, 100%) rotate(-12deg) translateY(-2000px);
+    }
+  }
+  @keyframes right {
+    from {
+      transform: scale(100%, 100%) rotate(-12deg) translateY(-2000px);
+    }
+    to {
+      transform: scale(100%, 100%) rotate(-12deg) translateY(900px);
+    }
+  }
+  .image-right {
+    animation-name: right;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+  }
+  .image-left {
+    animation-name: left;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+  }
   .general-flex {
     display: flex;
     flex-direction: row;
@@ -82,9 +110,16 @@
     flex-direction: row;
     justify-content: flex-end;
     z-index: -1;
+    margin-left: 80px;
   }
   .general-flex .fixed .size-image {
     display: none;
+  }
+  .general-flex .fixed .image-left {
+    transform: scale(100%, 100%) rotate(-12deg) translateY(-550px);
+  }
+  .general-flex .fixed .image-right {
+    transform: scale(100%, 100%) rotate(-12deg) translateY(-630px);
   }
   .cycle {
     display: flex;
@@ -193,10 +228,10 @@
   .general-flex .mobile .form_num_name .flex .margin-but .but {
     display: none;
   }
-  .general-flex .size-image-png {
+  .size-image-png {
     display: none;
   }
-  .general-flex .size-image {
+  .size-image {
     position: absolute;
     z-index: -1;
     width: 800px;
@@ -204,6 +239,12 @@
     transform: scale(0.5);
     top: -300px;
     right: -200px;
+  }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
   }
   .cycle {
     display: flex;
@@ -242,6 +283,12 @@
   }
 }
 @media (min-width: 424px) and (max-width: 767px) {
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
   .general-flex {
     display: flex;
     flex-direction: column;
@@ -327,7 +374,9 @@
   .general-flex .size-image {
     height: 800px;
     z-index: -1;
-    transform: scale(100%, 100%) translateY(-350px) translateX(155px);
+    transform: scale(100%, 100%) translateY(-350px);
+    position: absolute;
+    right: 0px;
   }
   .cycle {
     display: flex;
