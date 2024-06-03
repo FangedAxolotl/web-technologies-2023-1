@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Pizza</title>
 </head>
 <body>
+    <div class = "content">
+        <div class="pizza-container">
+            
+        </div>
+        <div class="choose">
+            <span>Выберите размер</span>
+            <div class="small_big">
+                <div id="small_big_inside"><span id="text_inside"></span></div>
+                <span class="small" onclick="clicked('left')">Маленькая</span>
+                <span class="big" onclick="clicked('right')">Большая</span>
+            </div>
+            <span>Добавить по вкусу</span>
+            <div class="taste">
+
+            </div>
+            <button id="button">
+                <span>Добавить в корзину за <br>
+                    <span id="buttonPrice"></span> рублей на
+                    <span id="buttonCalories"></span> калорий
+                </span>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

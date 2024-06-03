@@ -1,0 +1,104 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pizzas{
+    height: 300px;
+    width: 300px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.pizza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.choose{
+    font-size:xx-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.small_big{
+    margin-top: 20px;
+    height: 56px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    width: 500px;
+    opacity: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    user-select: none; 
+}
+
+#small_big_inside{
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: white;
+    margin: 3px;
+    z-index: 2;
+}
+
+.pizza-container {
+    display: flex;
+}
+
+.small_big_inside_end{
+    left: 49%;
+}
+
+.small, .big{
+    width: 50%;
+    text-align: center;
+}
+
+.size{
+    height: 150px;
+    width: 100px;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.product{
+    box-shadow: 0px 0px 20px;
+    width: 130px;
+    border-radius: 20px;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.taste{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    justify-content: space-around;
+}
+
+#button{
+    height: 100px;
+    background-color: lightsalmon;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: X-large;
+    color: white;
+}
