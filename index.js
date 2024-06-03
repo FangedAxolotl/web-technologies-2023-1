@@ -57,30 +57,6 @@ class PizzaType {
     getName = () => this.name;
 }
 
-// class Margarita extends Pizza {
-//     constructor(size) {
-//       super('Маргарита', size, 500, 300);
-//       this.price += (this.size === Sizes.Big) ? 200 : 100;
-//       this.calories += (this.size === Sizes.Big) ? 200 : 100;
-//     }
-// }
-
-// class Pepperoni extends Pizza {
-//     constructor(size) {
-//       super('Пепперони', size, 800, 400);
-//       this.price += (this.size === Sizes.Big) ? 200 : 100;
-//       this.calories += (this.size === Sizes.Big) ? 200 : 100;
-//     }
-// }
-  
-//   class Bavarian extends Pizza { 
-//     constructor(size) {
-//       super('Баварская', size, 700, 450);
-//       this.price += (this.size === Sizes.Big) ? 200 : 100;
-//       this.calories += (this.size === Sizes.Big) ? 200 : 100;
-//     }
-// }
-
 const pizzaTypes = [
     new PizzaType("Маргарита", new Map([[Sizes.Big, 700], [Sizes.Small, 600]]), new Map([[Sizes.Big, 500], [Sizes.Small, 400]])),
     new PizzaType("Пепперони", new Map([[Sizes.Big, 1000], [Sizes.Small, 900]]), new Map([[Sizes.Big, 600], [Sizes.Small, 500]])),
