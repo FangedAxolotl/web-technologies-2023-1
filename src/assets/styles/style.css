@@ -4,6 +4,7 @@
 @import "./catalog.css";
 @import "./post.css";
 @import "./photo.css";
+@import "./posts.css";
 
 .test {
     color: yellow !important;
