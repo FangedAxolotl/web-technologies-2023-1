@@ -1,5 +1,4 @@
 import AuthRepository from "../repository/auth.js";
-import api from "./api.js";
 import config from "./config.js";
 import location from "./location.js";
 
