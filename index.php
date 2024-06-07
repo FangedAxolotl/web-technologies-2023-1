@@ -1,22 +1,30 @@
-<?php include 'realization.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галлерея</title>
+    <title>Web-ИС Лабораторная работа №20</title>
+    <link rel="stylesheet" href="./lesson9/style.css" />
 </head>
 <body>
-<h1>Галерея фотографий</h1>
-<form name="upload-photo" action="upload.php" method="post" enctype="multipart/form-data">
-    <input type="submit" name="submitPhoto" id="submit" class="submit" style="display: none"/>
-    <label class="input-file">
-        <input type="file" name="uploadPhoto" id="uploadPhoto" onchange="document.getElementById('submit').click()"/>
-    </label>
-</form>
 <?php
-    logQuery();
-    buildGallery("./images/");
+    echo "<h1>MYSQL VER</h1>";
+
+    include './catalog_builder.php';
+    initCreation();
+
+    echo "<h1>HARDCODE VER</h1>";
+
+    $indexhtml = file_get_contents("./lesson9/index.html");
+    $body = mb_substr($indexhtml, strpos($indexhtml, "<body>"));
+
+    // remove </html> tag
+    $body = str_replace("</html>", "", $body);
+
+    // update src links
+    $body = str_replace("src=\"", "src=\"./lesson9/", $body);
+
+    echo $body;
 ?>
 </body>
 </html>
